@@ -1,5 +1,5 @@
 class makevm {
-  vsphere_vm { 'tls vsphere test':
+  vsphere_vm { '/west1/vm/tls vsphere test':
   ensure                      => 'running',
   source                      => '/west1/vm/windows-2012-eso',
   cpus                        => '1',
