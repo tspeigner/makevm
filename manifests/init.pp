@@ -1,8 +1,7 @@
 class makevm {
-  vsphere_vm { '/west1/vm/tlsvsphere':
-  ensure                      => 'present',
-  source                      => '/west1/vm/windows-2012-eso',
-  cpus                        => '1',
-  memory                      => '2048',
+  vsphere_vm { '/west1/vm/TSEs/tommy/vspheretest':
+  ensure        => running,
+  source        => '/west1/vm/Templates/windows-2012-updatedtools',
+  resource_pool => '/west1/tse1',
   }
 }
