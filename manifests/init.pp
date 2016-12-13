@@ -3,5 +3,6 @@ class makevm {
   ensure        => running,
   source        => '/west1/vm/Templates/windows-2012-updatedtools',
   #resource_pool => '/west1/tse1',
+  customization_spec => 'tlstest',
   }
 }
